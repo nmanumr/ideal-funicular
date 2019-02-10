@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Base Conversion</title>
+    <link rel="stylesheet" href="./spectre.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="form form-horizontal">
+            <div class="form-group" id="inp-div">
+                <label class="form-label label-sm" for="input-example-1">Number</label>
+                <input class="form-input input-sm" type="text" id="num-inp" placeholder="Number" maxlength="20">
+                <span class="form-input-hint msg">Passwords must have at least 8 characters.</span>
+            </div>
+            <div class="form-group">
+                <label class="form-label label-sm" for="input-example-1">Base</label>
+                <div class="input-group w100">
+                    <select class="form-select select-sm" id="from-base">
+                    </select>
+                    <span class="input-group-addon addon-sm">to</span>
+                    <select class="form-select select-sm" id="to-base">
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-switch input-sm">
+                    <input type="checkbox" checked id="steps">
+                    <i class="form-icon"></i> Show Steps
+                </label>
+            </div>
+            <div class="form-group float-right">
+                <button class="button" id="convert-btn">Convert</button>
+            </div>
+        </div>
+        <div class="output">
+            <b>Output</b>
+            <pre class="code" id="console"></pre>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./logger.js"></script>
+    <script src="./layout.js"></script>
+    <script src="./conversion.js"></script>
+</body>
+
+</html>
